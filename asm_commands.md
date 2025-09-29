@@ -57,8 +57,10 @@
 | `xchg reg, reg/mem` | Troca valores | `xchg eax, ebx` |
 | `call label` | Chama função | `call my_function` |
 | `ret` | Retorna de função | `ret` |
-| `push reg/mem` | Empilha valor | `push eax` |
-| `pop reg/mem` | Desempilha valor | `pop eax` |
+| `push reg/mem` | Empilha valor na stack | `push eax` |
+| `pusha` | Empilha todos os registradores gerais nessa ordem: `AX, CX, DX, BX, SP, BP, SI e DI | `pusha` |
+| `pop reg/mem` | Desempilha valor da stack | `pop eax` |
+| `popa` | Restaura o estado de todos os registradores gerais | `popa` |
 | `enter size, nesting` | Cria stack frame | `enter 32,0` |
 | `leave` | Limpa stack frame | `leave` |
 
